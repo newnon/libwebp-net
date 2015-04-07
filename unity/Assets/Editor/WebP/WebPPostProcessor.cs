@@ -11,11 +11,11 @@ public class WebPBuildPostprocessor
 	[PostProcessBuild]
 	public static void OnPostprocessBuild(BuildTarget target, string pathToBuiltProject)
 	{
-        if (target == BuildTarget.MetroPlayer)
+        if (target == BuildTarget.WSAPlayer)
         {
             //OnPostprocessBuildWSA(pathToBuiltProject);
         }
-        else if (target == BuildTarget.iPhone)
+        else if (target == BuildTarget.iOS)
         {
             OnPostprocessBuildIOS(pathToBuiltProject);
         }
